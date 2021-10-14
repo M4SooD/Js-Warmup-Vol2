@@ -1,3 +1,4 @@
+'use strict';
 /* Write a function that simply repeats the string based on
 given number of times. The function accepts two argument: a
 string and a number.

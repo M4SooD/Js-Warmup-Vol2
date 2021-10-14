@@ -1,3 +1,4 @@
+'use strict';
 /* Implement a function that takes 2 integers and returns the sum
 of every number between(and including) them. For example if
 user enters 20 and 25, our function needs to calculate

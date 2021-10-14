@@ -1,3 +1,4 @@
+'use strict';
 /* You are given an array of objects that represent events with a
 performer and an event title that looks like this:
 const events = [
