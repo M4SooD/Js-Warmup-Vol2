@@ -7,7 +7,7 @@ palindromes(‘jungle') // false
 */
 
 function palindromes(str) {
-    let onlyLetters = str.replace(/[`~ !@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '')
+    let onlyLetters = str.replace(/[\W_]/g, '')
     onlyLetters = onlyLetters.toLowerCase().split("");
     for (let i = 0; i < onlyLetters.length - 1 / 2; i++)
     if (onlyLetters[i] !== onlyLetters[onlyLetters.length - i - 1]) {
