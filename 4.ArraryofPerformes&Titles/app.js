@@ -37,3 +37,6 @@ function getFields(input, field) {
 
 const result =  getFields(events, 'performer')  
 console.log(result)
+
+module.exports = {getFields, events} ;
+
