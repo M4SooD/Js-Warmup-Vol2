@@ -23,25 +23,30 @@ Hints:
 
 function caesar(str, num) {
     const arr = [];
-    const re = /[a-zA-Z]/;
-    for (const c of str) {
-        if (re.test(c)) {
-            const start = c === c.toLowerCase() ? 'a'.charCodeAt(0) : 'A'.charCodeAt(0);
-            const diff = c.charCodeAt(0) - start;
-            const sh = num >= 0 ? diff + num : diff + Math.abs(26 - Math.abs(num));
-            const code = sh % 26 + start;
-            arr.push(String.fromCharCode(code));
+    const text = /[a-zA-Z]/;
+    for (const i of str) {
+        if (text.test(i)) {
+            const lowerCaseText = i === i.toLowerCase() ? 'a'.charCodeAt(0) : 'A'.charCodeAt(0);
+            const diff = i.charCodeAt(0) - lowerCaseText;
+            const shift = num >= 0 ? diff + num : diff + Math.abs(26 - Math.abs(num));
+            const cipher = shift % 26 + lowerCaseText;
+            arr.push(String.fromCharCode(cipher));
         } else { 
-            arr.push(c); 
+            arr.push(i); 
         }
     }
 
     return arr.join('');
 }
 
+
+
+
 console.log(caesar('Hello, World!', 5))
 console.log(caesar('A', 1))
 console.log(caesar('Z', 1))
+console.log(caesar('Mjqqt, Btwqi!', -5))
 
 /* Write decoder for the Caesar cipher above. For example:
-caesar('Mjqqt, Btwqi!', 5) //returns 'Hello, World!' */
+caesar('Mjqqt, Btwqi!', -5) //returns 'Hello, World!' */
+
