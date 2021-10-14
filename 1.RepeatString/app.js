@@ -15,7 +15,7 @@ times and add the given string to the result on each loop.
 • Have you heard of concatenation? 
 */
 
-function repeatStringNumTimes (str, num) {
+function repeatString (str, num) {
     if (num <= 0) {
         return ''
     }
@@ -29,5 +29,6 @@ function repeatStringNumTimes (str, num) {
     }
     return repeatedString;
 }
+console.log(repeatString("abc", "6"));
 
-console.log(repeatStringNumTimes("abc", "6"));
+module.exports = repeatString;

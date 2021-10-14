@@ -1,0 +1,22 @@
+{
+  "name": "js-warmup-vol2",
+  "version": "1.0.0",
+  "description": "more JS tasks for understanding the language better than before",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/M4SooD/Js-Warmup-Vol2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/M4SooD/Js-Warmup-Vol2/issues"
+  },
+  "homepage": "https://github.com/M4SooD/Js-Warmup-Vol2#readme",
+  "devDependencies": {
+    "jest": "^27.2.5"
+  }
+}

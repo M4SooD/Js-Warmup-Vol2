@@ -29,3 +29,5 @@ const sumAll = function(a, b) {
   console.log(sumAll('Hello', 'World!'));
   console.log(sumAll(6, 8));
   console.log(sumAll(-1, -1));
+
+  module.exports = sumAll;

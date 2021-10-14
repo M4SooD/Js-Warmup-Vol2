@@ -50,3 +50,4 @@ console.log(caesar('Mjqqt, Btwqi!', -5))
 /* Write decoder for the Caesar cipher above. For example:
 caesar('Mjqqt, Btwqi!', -5) //returns 'Hello, World!' */
 
+module.exports = caesar;

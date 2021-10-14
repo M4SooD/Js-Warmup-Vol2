@@ -22,3 +22,5 @@ function palindromes(str) {
 
 console.log(palindromes('jungle'))
 console.log(palindromes('racecar'))
+
+module.exports = palindromes;
